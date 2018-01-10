@@ -10,7 +10,7 @@ func fizzbuzz(a int) string {
 		result = "Fizz"
 	}
 
-	if a == 5 {
+	if (a % 5) == 0 {
 		result = "Buzz"
 	}
 
