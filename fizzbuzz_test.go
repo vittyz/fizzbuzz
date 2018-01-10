@@ -36,3 +36,10 @@ func TestInput5ExpectBuzz(t *testing.T) {
 		t.Error("5 is not Buzz")
 	}
 }
+
+func TestInput6ExpectFizz(t *testing.T) {
+	result := fizzbuzz(6)
+	if result != "Fizz" {
+		t.Error("6 is not Fizz")
+	}
+}

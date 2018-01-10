@@ -6,7 +6,7 @@ func fizzbuzz(a int) string {
 
 	result := strconv.Itoa(a)
 
-	if a == 3 {
+	if (a % 3) == 0 {
 		result = "Fizz"
 	}
 
