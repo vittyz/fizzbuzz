@@ -18,7 +18,7 @@ func TestInputTwoExpectTwo(t *testing.T) {
 
 func TestInputThreeExpectFizz(t *testing.T) {
 	result := fizzbuzz(3)
-	if result != "fizz" {
-		t.Error("3 is not fizz")
+	if result != "Fizz" {
+		t.Error("3 is not Fizz")
 	}
 }

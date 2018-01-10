@@ -4,9 +4,11 @@ import "strconv"
 
 func fizzbuzz(a int) string {
 
+	result := strconv.Itoa(a)
+
 	if a == 3 {
-		return "fizz"
+		result = "Fizz"
 	}
 
-	return strconv.Itoa(a)
+	return result
 }
