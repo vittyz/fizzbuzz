@@ -22,3 +22,17 @@ func TestInputThreeExpectFizz(t *testing.T) {
 		t.Error("3 is not Fizz")
 	}
 }
+
+func TestInput4Expect4(t *testing.T) {
+	result := fizzbuzz(4)
+	if result != "4" {
+		t.Error("4 is not 4")
+	}
+}
+
+func TestInput5ExpectBuzz(t *testing.T) {
+	result := fizzbuzz(5)
+	if result != "Buzz" {
+		t.Error("5 is not Buzz")
+	}
+}
