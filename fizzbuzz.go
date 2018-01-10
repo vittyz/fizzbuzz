@@ -14,5 +14,9 @@ func fizzbuzz(a int) string {
 		result = "Buzz"
 	}
 
+	if (a % 15) == 0 {
+		result = "FizzBuzz"
+	}
+
 	return result
 }

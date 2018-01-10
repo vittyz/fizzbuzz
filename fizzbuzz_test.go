@@ -71,3 +71,38 @@ func TestInput10ExpectBuzz(t *testing.T) {
 		t.Error("10 is not Buzz")
 	}
 }
+
+func TestInput11Expect11(t *testing.T) {
+	result := fizzbuzz(11)
+	if result != "11" {
+		t.Error("11 is not 11")
+	}
+}
+
+func TestInput12ExpectFizz(t *testing.T) {
+	result := fizzbuzz(12)
+	if result != "Fizz" {
+		t.Error("12 is not Fizz")
+	}
+}
+
+func TestInput13Expect13(t *testing.T) {
+	result := fizzbuzz(13)
+	if result != "13" {
+		t.Error("13 is not 13")
+	}
+}
+
+func TestInput14Expect14(t *testing.T) {
+	result := fizzbuzz(14)
+	if result != "14" {
+		t.Error("14 is not 14")
+	}
+}
+
+func TestInput15ExpectFizzBuzz(t *testing.T) {
+	result := fizzbuzz(15)
+	if result != "FizzBuzz" {
+		t.Error("15 is not FizzBuzz")
+	}
+}
