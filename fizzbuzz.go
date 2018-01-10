@@ -1,5 +1,12 @@
 package fizzbuzz
 
-func fizzbuzz(a int) int {
-	return a
+import "strconv"
+
+func fizzbuzz(a int) string {
+
+	if a == 3 {
+		return "fizz"
+	}
+
+	return strconv.Itoa(a)
 }
