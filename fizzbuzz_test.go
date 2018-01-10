@@ -8,3 +8,10 @@ func TestInputOne(t *testing.T) {
 		t.Error("Incorrect")
 	}
 }
+
+func TestInputTwoExpectTwo(t *testing.T) {
+	result := fizzbuzz(2)
+	if result != 2 {
+		t.Error("2 not equal 2")
+	}
+}
