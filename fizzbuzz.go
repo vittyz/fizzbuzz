@@ -3,20 +3,20 @@ package fizzbuzz
 import "strconv"
 
 func fizzbuzz(a int) string {
+	mod3equal0 := (a % 3) == 0
+	mod5equal0 := (a % 5) == 0
 
-	result := strconv.Itoa(a)
-
-	if (a % 3) == 0 {
-		result = "Fizz"
+	if mod3equal0 && mod5equal0 {
+		return "FizzBuzz"
 	}
 
-	if (a % 5) == 0 {
-		result = "Buzz"
+	if mod3equal0 {
+		return "Fizz"
 	}
 
-	if (a % 15) == 0 {
-		result = "FizzBuzz"
+	if mod5equal0 {
+		return "Buzz"
 	}
 
-	return result
+	return strconv.Itoa(a)
 }
